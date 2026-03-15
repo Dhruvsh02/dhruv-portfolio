@@ -1,0 +1,18 @@
+.footer {
+  border-top: 1px solid var(--bdr);
+  padding: 24px 56px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.fc { font-family: var(--fm); font-size: 0.74rem; color: var(--txt3); }
+.fn {
+  background: linear-gradient(90deg, var(--crimson), var(--purple));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  font-weight: 700;
+}
+.flinks { display: flex; gap: 16px; }
+.flinks a { font-size: 0.8rem; color: var(--txt3); transition: color 0.2s; }
+.flinks a:nth-child(odd):hover  { color: var(--crimson); }
+.flinks a:nth-child(even):hover { color: var(--purple); }
+@media (max-width: 880px) {
+  .footer { flex-direction: column; gap: 10px; text-align: center; padding: 20px; }
+}

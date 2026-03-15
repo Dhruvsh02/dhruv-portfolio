@@ -1,0 +1,24 @@
+.sgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.sgrp { background: var(--bg2); border: 1px solid var(--bdr); border-radius: var(--radius); padding: 24px; }
+.sgrp-t { font-family: var(--fd); font-size: 0.94rem; font-weight: 700; margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
+.si2 { font-size: 0.95rem; padding: 4px 6px; border-radius: 6px; }
+.si-crimson { background: rgba(232,0,45,0.08); } .si-purple { background: rgba(139,92,246,0.09); }
+.skill { margin-bottom: 13px; }
+.skill-row { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 0.85rem; color: var(--txt2); }
+.sp-c { font-family: var(--fm); font-size: 0.74rem; color: var(--crimson); }
+.sp-p { font-family: var(--fm); font-size: 0.74rem; color: var(--purple); }
+.sbar { height: 3px; background: var(--bg3); border-radius: 99px; overflow: hidden; }
+.sf-c { height: 100%; border-radius: 99px; background: linear-gradient(90deg,var(--crimson-dim),var(--crimson)); box-shadow: 0 0 6px rgba(232,0,45,0.38); transition: width 1.2s cubic-bezier(0.4,0,0.2,1); width: 0%; }
+.sf-p { height: 100%; border-radius: 99px; background: linear-gradient(90deg,var(--purple-dim),var(--purple)); box-shadow: 0 0 6px rgba(139,92,246,0.38); transition: width 1.2s cubic-bezier(0.4,0,0.2,1); width: 0%; }
+.tcloud { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.tp {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--fm); font-size: 0.74rem; padding: 6px 12px; border-radius: 8px;
+  background: var(--bg2); border: 1px solid var(--bdr); color: var(--txt2);
+  cursor: default; transition: all 0.2s; animation: float-tech 3s ease-in-out infinite alternate;
+}
+.tp:nth-child(2n) { animation-delay: 0.4s; }
+.tp:nth-child(3n) { animation-delay: 0.8s; }
+.tp:nth-child(odd):hover  { border-color: var(--crimson); color: var(--crimson); background: rgba(232,0,45,0.05); transform: translateY(-3px); }
+.tp:nth-child(even):hover { border-color: var(--purple);  color: var(--purple);  background: rgba(139,92,246,0.06); transform: translateY(-3px); }
+@media (max-width: 880px) { .sgrid { grid-template-columns: 1fr; } }

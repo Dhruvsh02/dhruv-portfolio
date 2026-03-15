@@ -1,0 +1,1 @@
+/* Logic is handled in the main component file */

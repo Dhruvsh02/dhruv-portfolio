@@ -1,0 +1,58 @@
+.fnote {
+  display: flex; align-items: flex-start; gap: 10px;
+  background: var(--bg2); border: 1px solid rgba(139,92,246,0.16);
+  border-radius: var(--radius); padding: 14px 18px; margin-bottom: 28px;
+  font-size: 0.86rem; color: var(--txt2); line-height: 1.6;
+}
+.fnote-i { font-size: 1.1rem; flex-shrink: 0; }
+.pgrid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+.pcard {
+  background: var(--bg2); border: 1px solid var(--bdr);
+  border-radius: var(--radius); padding: 20px;
+  transition: all 0.3s; position: relative; overflow: hidden; cursor: pointer;
+}
+.pcard::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
+}
+.pcard-crimson::before { background: linear-gradient(90deg,var(--crimson),var(--purple)); }
+.pcard-purple::before  { background: linear-gradient(90deg,var(--purple),var(--crimson)); }
+.pcard-crimson:hover { border-color: rgba(232,0,45,0.28); box-shadow: 0 8px 32px rgba(232,0,45,0.09); transform: translateY(-4px); }
+.pcard-purple:hover  { border-color: rgba(139,92,246,0.28); box-shadow: 0 8px 32px rgba(139,92,246,0.09); transform: translateY(-4px); }
+.pcard:hover::before { transform: scaleX(1); }
+.pcard-cs { grid-column: span 2; }
+.ph2 { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 9px; }
+.pi { font-size: 1.3rem; padding: 6px; border-radius: 7px; }
+.pi-crimson { background: rgba(232,0,45,0.07); } .pi-purple { background: rgba(139,92,246,0.08); }
+.plinks { display: flex; gap: 6px; }
+.plinks a {
+  font-size: 0.74rem; color: var(--txt3); padding: 3px 8px;
+  border-radius: 5px; border: 1px solid var(--bdr); transition: all 0.2s;
+}
+.plinks a:hover { color: var(--purple); border-color: var(--purple); }
+.plinks .soon-badge {
+  font-family: var(--fm); font-size: 0.7rem; color: var(--txt3);
+  padding: 3px 8px; border-radius: 5px; border: 1px solid var(--bdr);
+}
+.pn { font-family: var(--fd); font-size: 1.02rem; font-weight: 700; margin-bottom: 6px; }
+.cs-badge {
+  font-family: var(--fm); font-size: 0.72rem; color: var(--purple);
+  background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.2);
+  padding: 2px 8px; border-radius: 5px; margin-left: 8px;
+}
+.pd { font-size: 0.84rem; color: var(--txt2); line-height: 1.62; margin-bottom: 12px; }
+.ptags { display: flex; gap: 5px; flex-wrap: wrap; }
+.ptag { font-family: var(--fm); font-size: 0.68rem; padding: 2px 8px; border-radius: 5px; background: var(--bg3); color: var(--txt3); border: 1px solid var(--bdr); }
+.pfoot { display: flex; align-items: center; gap: 10px; margin-top: 12px; padding-top: 11px; border-top: 1px solid var(--bdr); font-family: var(--fm); font-size: 0.71rem; color: var(--txt3); }
+.pfoot .star span { color: #FFB700; }
+.gh-note { font-family: var(--fm); font-size: 0.78rem; color: var(--txt3); margin-top: 20px; text-align: center; }
+.gh-note a { color: var(--purple); text-decoration: underline; }
+@media (max-width: 880px) { .pgrid { grid-template-columns: 1fr 1fr; } .pcard-cs { grid-column: span 1; } }
+@media (max-width: 560px) { .pgrid { grid-template-columns: 1fr; } }
+.pfilt { display: flex; gap: 7px; margin-bottom: 24px; flex-wrap: wrap; }
+.fbt2 {
+  font-family: var(--fm); font-size: 0.74rem; padding: 5px 13px; border-radius: 7px;
+  border: 1px solid var(--bdr); background: transparent; color: var(--txt2); cursor: pointer; transition: all 0.2s;
+}
+.fbt2:hover { border-color: var(--purple); color: var(--purple); background: rgba(139,92,246,0.06); }
+.fbt2.act   { border-color: var(--crimson); color: var(--crimson); background: rgba(232,0,45,0.06); }

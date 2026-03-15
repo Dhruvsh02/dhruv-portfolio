@@ -1,0 +1,53 @@
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Pulse dot */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.6); }
+}
+
+/* Blink cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* Ring spin */
+@keyframes ring-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Float blob */
+@keyframes float-blob {
+  from { transform: translate(0, 0); }
+  to   { transform: translate(7px, -9px); }
+}
+
+/* Float tech pill */
+@keyframes float-tech {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-5px); }
+}
+
+/* Glitch */
+@keyframes glitch-1 {
+  0%, 88%, 100% { clip-path: none; transform: none; }
+  89%  { clip-path: inset(18px 0 55px 0); transform: translate(-2px, 0); }
+  92%  { clip-path: inset(45px 0 18px 0); transform: translate(2px, 0); }
+  95%  { clip-path: none; }
+}
+@keyframes glitch-2 {
+  0%, 90%, 100% { clip-path: none; transform: none; }
+  91%  { clip-path: inset(8px 0 65px 0); transform: translate(2px, 0); }
+  94%  { clip-path: inset(35px 0 28px 0); transform: translate(-2px, 0); }
+  97%  { clip-path: none; }
+}
