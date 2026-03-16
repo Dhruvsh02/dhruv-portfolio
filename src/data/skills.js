@@ -5,7 +5,7 @@ const skills = [
     accent: 'crimson',
     items: [
       { name: 'Python',           pct: 85 },
-      { name: 'Flask / Django',   pct: 72 },
+      { name: 'FastAPI / Django',   pct: 72 },
       { name: 'Node.js / Express',pct: 68 },
       { name: 'REST APIs',        pct: 75 },
     ],
@@ -28,8 +28,8 @@ const skills = [
     items: [
       { name: 'Data Structures & Algo', pct: 82 },
       { name: 'OOP Concepts',           pct: 80 },
-      { name: 'C / C++',               pct: 75 },
-      { name: 'SQL & Databases',        pct: 70 },
+      { name: 'SQL & Databases',        pct: 75 },
+      { name: 'Networking & Cloud Basics',        pct: 70 },
     ],
   },
   {
@@ -41,15 +41,20 @@ const skills = [
       { name: 'Machine Learning Basics', pct: 62 },
       { name: 'NumPy / Pandas',          pct: 68 },
       { name: 'Linux / Terminal',        pct: 65 },
+      { name: 'Postman / API Testing',        pct: 78 },
+      { name: 'Docker',        pct: 55 },
+      { name: 'CI/CD (Github Actions)',        pct: 60 },
     ],
   },
 ]
 
 export const techPills = [
   '🐍 Python', '⚛️ React', '🟨 JavaScript',
-  '🔥 Flask',  '🟢 Node.js', '🍃 MongoDB',
+  '🔥 Flask',  '⚡ FastAPI', '⚡ Django' ,'🍃 MongoDB',
   '🐬 MySQL',  '🔧 Git',     '🎨 Tailwind',
+  '🐳 Docker',
   '🔴 C++',    '🤖 ML Basics', '📊 Pandas',
+  '📡 REST API',
 ]
 
 export default skills

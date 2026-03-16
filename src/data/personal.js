@@ -4,10 +4,8 @@ const personal = {
   lastName: 'Sharma',
   role: 'CS Fresher',           // shown in logo / meta
   location: 'Delhi, India',
-  email: 'your.email@gmail.com', // replace with your actual email
-  bio: `A Computer Science fresher from Delhi, passionate about building meaningful
-software. I love solving problems with clean code and am open to any domain —
-backend, frontend, full stack, data science, or AI/ML.`,
+  email: 'dhruvsharma110044@gmail.com', // replace with your actual email
+  bio: `I'm a Computer Science fresher from Delhi with a passion for building things that actually matter. Whether it's a clean backend API, a smooth frontend interface, a data pipeline, or an Ml model - I enjoy the full spectrum of software develpoment. I'm a quick learner who thrives on challenges, and I'm actively looking for opportunities where I can contribute, and make an impact from day one.`,
 
   // Social links
   github:   'https://github.com/Dhruvsh02',
@@ -23,6 +21,8 @@ backend, frontend, full stack, data science, or AI/ML.`,
     'CS Fresher',
     'Full Stack Developer',
     'Python Developer',
+    'Data Science Enthusiast',
+    'Cloud Explorer',
     'Problem Solver',
     'AI/ML Explorer',
     'Quick Learner',
@@ -35,10 +35,13 @@ backend, frontend, full stack, data science, or AI/ML.`,
     { label: '💻 Full Stack',    style: 'crimson' },
     { label: '🧠 DSA',           style: 'purple'  },
     { label: '🤖 AI/ML',         style: 'crimson' },
+    { label: '📊 Data Science',  style: 'purple'  },
+    { label: '☁️ Cloud',         style: 'crimson'  },
     { label: '🌱 Quick Learner', style: 'purple'  },
   ],
 
   // About stats
+  // need to make changes here later
   stats: [
     { count: 5,   label: 'GitHub Projects', style: 'crimson' },
     { count: 100, label: 'LeetCode Solved',  style: 'purple'  },
