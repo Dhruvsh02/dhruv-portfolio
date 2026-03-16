@@ -5,9 +5,10 @@ const skills = [
     accent: 'crimson',
     items: [
       { name: 'Python',           pct: 85 },
-      { name: 'FastAPI / Django',   pct: 72 },
-      { name: 'Node.js / Express',pct: 68 },
-      { name: 'REST APIs',        pct: 75 },
+      { name: 'FastAPI / Django',   pct: 80 },
+      { name: 'REST APIs',        pct: 85 },
+      { name: 'Authentication & JWT',  pct: 78 },
+      { name: 'Microservice Architecture',  pct: 65 },
     ],
   },
   {
@@ -17,8 +18,8 @@ const skills = [
     items: [
       { name: 'HTML / CSS',         pct: 88 },
       { name: 'JavaScript (ES6+)',   pct: 78 },
-      { name: 'React.js',            pct: 70 },
-      { name: 'Tailwind CSS',        pct: 72 },
+      { name: 'React.js',            pct: 72 },
+      { name: 'Tailwind CSS',        pct: 75 },
     ],
   },
   {
@@ -26,9 +27,9 @@ const skills = [
     icon: '🧠',
     accent: 'crimson',
     items: [
-      { name: 'Data Structures & Algo', pct: 82 },
+      { name: 'Data Structures & Algo', pct: 80 },
       { name: 'OOP Concepts',           pct: 80 },
-      { name: 'SQL & Databases',        pct: 75 },
+      { name: 'SQL & Databases',        pct: 78 },
       { name: 'Networking & Cloud Basics',        pct: 70 },
     ],
   },
@@ -39,11 +40,11 @@ const skills = [
     items: [
       { name: 'Git & GitHub',           pct: 85 },
       { name: 'Machine Learning Basics', pct: 62 },
-      { name: 'NumPy / Pandas',          pct: 68 },
-      { name: 'Linux / Terminal',        pct: 65 },
-      { name: 'Postman / API Testing',        pct: 78 },
-      { name: 'Docker',        pct: 55 },
-      { name: 'CI/CD (Github Actions)',        pct: 60 },
+      { name: 'NumPy / Pandas',          pct: 70 },
+      { name: 'Linux / Terminal',        pct: 70 },
+      { name: 'Postman / API Testing',        pct: 80 },
+      { name: 'Docker',        pct: 60 },
+      { name: 'CI/CD (Github Actions)',        pct: 65 },
     ],
   },
 ]
@@ -57,4 +58,4 @@ export const techPills = [
   '📡 REST API',
 ]
 
-export default skills
+export default skills 

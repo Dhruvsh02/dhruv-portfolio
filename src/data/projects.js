@@ -1,4 +1,18 @@
 const projects = [
+    {
+    id: 1, 
+    name: 'Banking Application',
+    desc: 'Full-stack banking app currently in development — account management, secure transactions, authentication and dashboards. Adding to portfolio on completion.',
+    tags: ['Full Stack', 'Python', 'React', 'Database'],
+    icon: '🏦',
+    accent: 'crimson',
+    repoUrl: '',
+    liveUrl: '',
+    category: 'Web Dev',
+    stars: 0,
+    forks: 0,
+    comingSoon: true,
+  },
   {
     id: 2,
     name: 'Document Scanner Pro',
@@ -102,20 +116,6 @@ const projects = [
     category: 'DSA',
     stars: 0,
     forks: 0,
-  },
-  {
-    id: 1, 
-    name: 'Banking Application',
-    desc: 'Full-stack banking app currently in development — account management, secure transactions, authentication and dashboards. Adding to portfolio on completion.',
-    tags: ['Full Stack', 'Python', 'React', 'Database'],
-    icon: '🏦',
-    accent: 'crimson',
-    repoUrl: '',
-    liveUrl: '',
-    category: 'Web Dev',
-    stars: 0,
-    forks: 0,
-    comingSoon: true,
   },
 ]
 

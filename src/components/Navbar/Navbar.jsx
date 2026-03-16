@@ -13,6 +13,8 @@ export default function Navbar() {
       <div className="nav-logo">
         <span className="logo-bracket">&lt;</span>
         <span className="logo-name">Dhruv</span>
+        <span className="logo-dot">.</span>
+        <span className="logo-last">dev</span>
         <span className="logo-bracket">/&gt;</span>
       </div>
 

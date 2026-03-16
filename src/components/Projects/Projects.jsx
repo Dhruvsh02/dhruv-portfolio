@@ -22,7 +22,7 @@ export default function Projects() {
       <RevealWrapper>
         <div className="fnote">
           <span className="fnote-i">💡</span>
-          <span>These are <strong style={{color:'var(--purple)'}}>personal &amp; academic projects</strong> — each one pushed me to learn something new. A banking application is currently in progress and will be added once complete.</span>
+          <span>These are <strong style={{color:'var(--purple)'}}>personal &amp; academic projects</strong> — each one built to solve a real problem and push my skills further. More projects are in progress and will be added as they ship.</span>
         </div>
       </RevealWrapper>
 

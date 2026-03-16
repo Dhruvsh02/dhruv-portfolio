@@ -5,7 +5,13 @@ const personal = {
   role: 'CS Fresher',           // shown in logo / meta
   location: 'Delhi, India',
   email: 'dhruvsharma110044@gmail.com', // replace with your actual email
-  bio: `I'm a Computer Science fresher from Delhi with a passion for building things that actually matter. Whether it's a clean backend API, a smooth frontend interface, a data pipeline, or an Ml model - I enjoy the full spectrum of software develpoment. I'm a quick learner who thrives on challenges, and I'm actively looking for opportunities where I can contribute, and make an impact from day one.`,
+  bio: `I'm a Computer Science student from Delhi with a strong focus on backend
+        development and software engineering. I enjoy building scalable APIs,
+        designing reliable systems, and developing real-world applications.
+        I also work with full-stack technologies and have a growing interest in
+        data engineering and data-driven systems. I'm a fast learner who enjoys
+        solving challenging problems and I'm actively looking for opportunities
+        where I can contribute and grow as a developer from day one.`,
 
   // Social links
   github:   'https://github.com/Dhruvsh02',
@@ -19,8 +25,8 @@ const personal = {
   // Hero typewriter roles
   roles: [
     'CS Fresher',
+    'Python & Backend Developer',
     'Full Stack Developer',
-    'Python Developer',
     'Data Science Enthusiast',
     'Cloud Explorer',
     'Problem Solver',
@@ -37,16 +43,17 @@ const personal = {
     { label: '🤖 AI/ML',         style: 'crimson' },
     { label: '📊 Data Science',  style: 'purple'  },
     { label: '☁️ Cloud',         style: 'crimson'  },
-    { label: '🌱 Quick Learner', style: 'purple'  },
+    { label: '🧪 Testing & CI/CD',     style: 'purple'  },
+    { label: '🌱 Quick Learner', style: 'crimson'  },
   ],
 
   // About stats
   // need to make changes here later
   stats: [
-    { count: 5,   label: 'GitHub Projects', style: 'crimson' },
-    { count: 100, label: 'LeetCode Solved',  style: 'purple'  },
+    { count: 8,   label: 'GitHub Projects', style: 'crimson' },
+    { count: 110, label: 'LeetCode Solved',  style: 'purple'  },
     { count: 2,   label: 'Years Coding',     style: 'purple'  },
-    { count: 7,   label: 'Technologies',     style: 'crimson' },
+    { count: 10,   label: 'Technologies',     style: 'crimson' },
   ],
 
   // Currently looking for

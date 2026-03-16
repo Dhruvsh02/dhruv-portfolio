@@ -46,6 +46,16 @@
 [data-theme="light"] .tog-thumb { transform: translateX(18px); }
 .tog-lbl { font-family: var(--fm); font-size: 0.68rem; color: var(--txt2); letter-spacing: 0.05em; }
 
+.logo-dot {
+  color: var(--purple);
+  font-weight: 800;
+}
+.logo-last {
+  color: var(--purple);
+  background: linear-gradient(90deg, var(--purple), var(--crimson));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
 @media (max-width: 880px) {
   .navbar { padding: 0 16px; }
   .nav-links { display: none; }
