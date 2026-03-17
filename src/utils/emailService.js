@@ -6,16 +6,17 @@ const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
 
 emailjs.init(PUBLIC_KEY)
 
-/**
- * Sends an email via EmailJS.
- * @param {{ name: string, email: string, message: string }} formData
- * @returns {Promise}
- */
 export async function sendEmail({ name, email, message }) {
-  return emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-    from_name:  name,
-    from_email: email,
-    message,
-    to_name:    'Dhruv',
-  })
+  return emailjs.send(
+    SERVICE_ID,
+    TEMPLATE_ID,
+    {
+      title:   'Portfolio Contact',
+      name:    name,
+      time:    new Date().toLocaleString('en-IN'),
+      message: message,
+      email:   email,
+    },
+    PUBLIC_KEY
+  )
 }

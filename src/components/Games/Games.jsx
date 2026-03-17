@@ -89,7 +89,7 @@ export default function Games() {
               fontFamily: 'var(--fd)', fontSize: '1.15rem',
               fontWeight: 700, marginBottom: 16, color: 'var(--txt)',
             }}>
-              {getTitle()}
+              {GAMES.find(g => g.id === open)?.name}
             </div>
 
             {/* Game component */}

@@ -4,7 +4,12 @@
   padding: 26px 20px; text-align: center; transition: all 0.3s; cursor: pointer;
   position: relative; overflow: hidden;
 }
-.gcard::after { content:''; position:absolute; inset:0; opacity:0; transition: opacity 0.3s; }
+/* ✅ KEY FIX: pointer-events none so the overlay never blocks button clicks */
+.gcard::after {
+  content:''; position:absolute; inset:0; opacity:0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
 .gcard-crimson::after { background: radial-gradient(circle at 50% 100%,rgba(232,0,45,0.09) 0%,transparent 60%); }
 .gcard-purple::after  { background: radial-gradient(circle at 50% 100%,rgba(139,92,246,0.11) 0%,transparent 60%); }
 .gcard-crimson:hover { border-color:rgba(232,0,45,0.3); box-shadow:0 8px 32px rgba(232,0,45,0.09); transform:translateY(-5px); }
@@ -16,7 +21,9 @@
 .gbtn-c, .gbtn-p {
   display: inline-flex; align-items: center; gap: 5px;
   font-family: var(--fm); font-size: 0.74rem; padding: 7px 16px; border-radius: 7px;
-  cursor: pointer; transition: all 0.2s; position: relative; z-index: 1;
+  cursor: pointer; transition: all 0.2s;
+  position: relative; z-index: 2;
+  pointer-events: all;
 }
 .gbtn-c { background:rgba(232,0,45,0.08); color:var(--crimson); border:1px solid rgba(232,0,45,0.2); }
 .gbtn-p { background:rgba(139,92,246,0.08); color:var(--purple);  border:1px solid rgba(139,92,246,0.2); }
@@ -24,7 +31,7 @@
 .gbtn-p:hover { background:var(--purple);  color:#fff; border-color:var(--purple); }
 /* Modal */
 .modal-overlay {
-  position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9000;
+  position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9999;
   display: flex; align-items: center; justify-content: center;
   backdrop-filter: blur(8px);
 }
