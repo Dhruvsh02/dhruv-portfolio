@@ -19,7 +19,7 @@ const personal = {
   leetcode: 'https://leetcode.com/u/oyQua38Nmk/',
 
   // Files — place these in /public
-  resume:   '/Dhruv_resume.pdf',
+  resume:   '/Dhruvsh_res.pdf',
   photo:    '/photo4.jpg',       // or import from src/assets/images/photo.jpg
 
   // Hero typewriter roles
